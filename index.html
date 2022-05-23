@@ -192,7 +192,7 @@ window.onclick = function(event) {
 <body>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="myModal" class="modal" id="demo">
 
   <!-- Modal content -->
   <div class="modal-content">
@@ -201,20 +201,30 @@ window.onclick = function(event) {
   </div>
 
 </div>
-
+<div>
 <div class="1" id="draggable" class="ui-widget-content" style="width: 75px; height: 75px; border: none;  position: absolute; left: 53%; top: 23%;">
+  <button type="button" onclick="myFunction()" id="myBtn" style="width: 75px; height: 75px; border: none;  position: absolute; left: 53%; top: 23%; display: block; cursor: pointer;"></button>
   <img src="https://icons.iconarchive.com/icons/dtafalonso/yosemite-flat/512/Folder-icon.png" style="width: 75px; height: 75px; border: none;  position: absolute; left: 53%; top: 23%;">
-  <button id="myBtn"  style="width: 75px; height: 75px; border: none;  position: absolute; left: 53%; top: 23%; display: none;"></button>
 </div>
-  
+</div>
+<div>
 <div class="2" id="draggable2" class="ui-widget-content" style="width: 75px; height: 75px; border: none;  position: absolute; left: 23%; top: 53%; ">
-  <img src="https://icons.iconarchive.com/icons/dtafalonso/yosemite-flat/512/Folder-icon.png" style="width: 75px; height: 75px; border: none;  position: absolute; left: 23%; top: 53%; ">
-  <button id="myBtn"  style="width: 75px; height: 75px; border: none;  position: absolute; left: 23%; top: 53%; display: none;"></button>
+  <button type="button" onclick="myFunction()" id="myBtn" style="width: 75px; height: 75px; border: none;  position: absolute; left: 23%; top: 53%; display: block; cursor: pointer;"></button>
+  <img src="https://icons.iconarchive.com/icons/dtafalonso/yosemite-flat/512/Folder-icon.png" style="width: 75px; height: 75px; border: none;  position: absolute; left: 23%; top: 53%;">
 </div>
-  
+</div>
+<div>
 <div class="3" id="draggable3" class="ui-widget-content" style="width: 75px; height: 75px; border: none;  position: absolute; left: 82%; top: 33%; ">
+  <button type="button" onclick="myFunction()" id="myBtn" style="width: 75px; height: 75px; border: none;  position: absolute; left: 82%; top: 33%; display: block; cursor: pointer;"></button>
   <img src="https://icons.iconarchive.com/icons/dtafalonso/yosemite-flat/512/Folder-icon.png" style="width: 75px; height: 75px; border: none;  position: absolute; left: 82%; top: 33%; ">
-  <button id="myBtn"  style="width: 75px; height: 75px; border: none;  position: absolute; left: 82%; top: 33%; display: none;"></button>
+</div>
 </div>
 </body>
 </html>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myBtn").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
